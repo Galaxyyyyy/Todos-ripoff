@@ -1,0 +1,17 @@
+{
+  "name": "ms-todo-ripoff",
+  "version": "1.0.0",
+  "description": "Just a ms todo ripoff i made because i was bored",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Galaxy",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

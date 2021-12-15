@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+#sidebar {
+  width: 21vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #03203c;
+  color: white;
+}
+
+#sidebar #sidebar-title {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #12b0e8;
+  height: 7vh;
+}
+
+#sidebar #sidebar-title h1 {
+  font-size: 2vw;
+}
+
+#sidebar #sidebar-item {
+  font-size: 1.5vw;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: darkgray;
+}
+
+#sidebar #sidebar-item div {
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sidebar #sidebar-item h3 {
+  font-size: 1.5vw;
+  font-weight: normal;
+}
+
+#sidebar #sidebar-item div:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#sidebar #checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 7vw;
+  height: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sidebar #checkbox #slider {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sidebar #checkbox #slider.left {
+  margin-left: 3px;
+}
+
+#sidebar #checkbox #slider.right {
+  margin-left: calc(5.5vw - 3px);
+}
+
+#sidebar #checkbox.left {
+  background-color: #ccc;
+}
+
+#sidebar #checkbox.right {
+  background-color: #2196f3;
+}
+
+#title {
+  margin-left: 21vw;
+  height: 5.5vh;
+  text-align: center;
+}
+
+#add {
+  width: 50vw;
+  margin-top: 2.5vh;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 35vw;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#add * {
+  text-align: center;
+  font-size: 2vw;
+  height: 7vh;
+}
+
+#add #add-input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+#add #add-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#add #add-options i {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+#add #add-date {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ 3;
+}
+
+#tasks {
+  margin-left: 37.5vw;
+  margin-top: 3rem;
+}
+
+#tasks .todo {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 40vw;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2vw;
+  font-family: "Source Code Pro", monospace;
+  border: 2px solid black;
+}
+
+#tasks .todo .todo-modify {
+  position: absolute;
+  background-color: #b8b7b7;
+  border: 1px solid black;
+  padding: 0.3rem;
+  right: -0.5rem;
+  top: -0.5rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#tasks .todo .todo-modify .todo-delete {
+  color: red;
+}
+
+#tasks .todo .todo-due {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ 3;
+}
+
+#tasks .todo:hover .todo-modify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.enabled {
+  color: orange;
+}
+
+.checked {
+  color: green;
+}
+/*# sourceMappingURL=styles.css.map */

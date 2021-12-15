@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e0f96e3082.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MS-TODO-RIPOFF-PFFFT</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar-title">
+        <h1>Cheap Quality Copy🔥</h1>
+      </div>
+      <br />
+      <div id="sidebar-item">
+        <div>
+          <i class="fas fa-sun sidebar-selector" id="ss-my-day"></i>
+          <h3 class="sidebar-selector" id="ss-my-day">My Day</h3>
+        </div>
+        <div>
+          <i class="fas fa-star sidebar-selector" id="ss-important"></i>
+          <h3 class="sidebar-selector" id="ss-important">Important</h3>
+        </div>
+        <div>
+          <i class="fas fa-check-circle sidebar-selector" id="ss-completed"></i>
+          <h3 class="sidebar-selector" id="ss-completed">Completed</h3>
+        </div>
+        <div>
+          <i class="fas fa-home sidebar-selector" id="ss-all-tasks"></i>
+          <h3 class="sidebar-selector" id="ss-all-tasks">All Tasks</h3>
+        </div>
+        <div class="toggle">
+          <div id="checkbox" class="left">
+            <div id="slider" class="left"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="title">All tasks</h1>
+    <div id="add">
+      <input
+        type="text"
+        id="add-input"
+        placeholder="Enter your task!"
+        tabindex="1"
+      />
+      <input type="date" id="add-date" tabindex="2" />
+      <div id="add-options">
+        <i class="fas fa-star" id="add-star"></i>
+        <i class="fas fa-plus" id="add-btn" onclick="addItem(this)"></i>
+      </div>
+    </div>
+    <div id="tasks">
+      <!-- <div class="todo">
+        <h2 class="todo-title">Title</h2>
+        <div class="todo-modify">
+          <i class="fas fa-check-circle todo-check"></i>
+          <i class="fas fa-star todo-star" onclick="unstarTodo(this)"></i>
+          <i class="fas fa-trash todo-delete" onclick="deleteDiv(this)"></i>
+        </div>
+        <h3 class="todo-due">Due ur mom</h3>
+      </div> -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
